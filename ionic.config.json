@@ -1,0 +1,7 @@
+{
+  "name": "ExamMontanoC",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
