@@ -1,0 +1,48 @@
+<app-header titulo="          
+Montaño Cristel"></app-header>
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-title> </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+    <ion-list>
+        <ion-list>
+            <ion-list-header>
+                <ion-label>Input normal</ion-label>
+            </ion-list-header>
+            <ion-item>
+                <ion-input type="floating" placeholde="solid" label="Nombre" placeholder="Montaño Cristel Esther"></ion-input>
+            </ion-item>
+
+            <ion-list-header>
+                <ion-label>Formulario válido:true</ion-label>
+            </ion-list-header>
+            <ion-item>
+                <ion-label>Email:</ion-label>
+                <ion-input type="email" placeholder="Email" name="email" [(ngModel)]="usuario.email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zAZ]{2,5})$" required></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Telephone input:</ion-label>
+                <ion-input type="floating" placeholder="solid" name="Entrada de telefono" type="tel" placeholder="0961800635"></ion-input>
+            </ion-item>
+
+
+
+            <ion-item>
+                <ion-label>Birthdate:</ion-label>
+                <ion-input type="date" placeholder="dd-mm-yyyy" name="birthdate" [(ngModel)]="usuario.birthdate" required placeholder="dd-mm-yyyy">
+                </ion-input>
+            </ion-item>
+
+            <ion-button expand="block">Login</ion-button>
+
+
+
+        </ion-list>
+    </ion-list>
+
+</ion-content>
